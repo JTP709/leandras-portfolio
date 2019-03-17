@@ -10,7 +10,7 @@ const About = () => {
       <div className="spotlight">
         <div className="content">
           <header className="major">
-            <h2>Hello, stranger! I'm Leandra!</h2>
+            <h2>Hello, stranger, I'm Leandra!</h2>
           </header>
           <p>
             Now that we're formally introduced, let me tell you a little bit about myself. 
