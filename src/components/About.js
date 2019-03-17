@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import pic01 from '../assets/images/pic01.jpg'
+import lc from '../assets/images/lc.jpg';
+
+const nkuURL = "https://www.nku.edu/academics/artsci/programs/undergraduate/visualcommunicationdesign.html";
 
 const About = () => {
   return (
@@ -8,16 +10,21 @@ const About = () => {
       <div className="spotlight">
         <div className="content">
           <header className="major">
-            <h2>Ipsum sed adipiscing</h2>
+            <h2>Hello, stranger! I'm Leandra!</h2>
           </header>
-          <p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-          adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-          Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-          <ul className="actions">
-            <li><Link to="/generic" className="button">Learn More</Link></li>
-          </ul>
+          <p>
+            Now that we're formally introduced, let me tell you a little bit about myself. 
+            I'm a Visual Communication and Design student at 
+            <Link to={`${nkuURL}`}> Northern Kentucky University </Link>
+            and the social media strategist and web admin for 
+            <Link to="https://www.tswgo.org/"> This Star Won't Go Out</Link>, 
+            a non-profit charity organization.
+          </p>
+          {/* {<ul className="actions">
+            <li><Link to="/generic" className="button">Contact</Link></li>
+          </ul>} */}
         </div>
-        <span className="image"><img src={pic01} alt="" /></span>
+        <span className="image"><img src={lc} alt="" /></span>
       </div>
     </section>
   )
