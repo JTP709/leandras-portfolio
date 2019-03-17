@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const Skills = () => {
   return (
-    <section id="first" className="main special">
+    <section id="skills" className="main special">
       <header className="major">
         <h2>Magna veroeros</h2>
       </header>

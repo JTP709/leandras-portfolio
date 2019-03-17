@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const Portfolio = () => {
   return (
-    <section id="second" className="main special">
+    <section id="portfolio" className="main special">
       <header className="major">
         <h2>Ipsum consequat</h2>
         <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />

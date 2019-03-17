@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const Contact = () => {
   return (
-    <section id="cta" className="main special">
+    <section id="contact" className="main special">
       <header className="major">
         <h2>Congue imperdiet</h2>
         <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
