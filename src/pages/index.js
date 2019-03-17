@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Waypoint from 'react-waypoint'
 
 import Layout from '../components/layout'
-import Header from '../components/Header'
+import Header from '../components/TEMP'
 import Nav from '../components/Nav'
 import About from '../components/About'
 import Skills from '../components/Skills'
@@ -33,25 +33,6 @@ class Index extends React.Component {
         <Helmet title="Leandra's Portfolio" />
 
         <Header />
-
-        <Waypoint
-          onEnter={this._handleWaypointEnter}
-          onLeave={this._handleWaypointLeave}
-        >
-        </Waypoint>
-        <Nav sticky={this.state.stickyNav} />
-
-        <div id="main">
-
-          <About />
-
-          <Skills />
-
-          <Portfolio />
-
-          <Contact />
-
-        </div>
 
       </Layout>
     )
