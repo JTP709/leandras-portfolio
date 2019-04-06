@@ -31,6 +31,15 @@
 			> :last-child {
 				margin-bottom: 0;
 			}
+
+			.image {
+				opacity: 1;
+
+				&:hover {
+					opacity: 0;
+					cursor: pointer;
+				}
+			}
 		}
 
 		@include breakpoint(medium) {

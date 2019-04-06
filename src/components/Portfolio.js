@@ -1,39 +1,64 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import pic01 from '../assets/images/pic01.jpg';
+import pic02 from '../assets/images/pic02.jpg';
+import pic03 from '../assets/images/pic03.jpg';
 
-// Photography
-// Web Design
-// Social Media
-// Hand Crafted
-// Illustration
+
+const data = [
+  {
+    header: 'Photography',
+    description: 'Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.',
+    link: '/generic',
+    pic: pic01
+  },
+  {
+    header: 'Web Design',
+    description: 'Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.',
+    link: '/generic',
+    pic: pic02
+  },
+  {
+    header: 'Social Media',
+    description: 'Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.',
+    link: '/generic',
+    pic: pic03
+  },
+  {
+    header: 'Hand Crafted',
+    description: 'Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.',
+    link: '/generic',
+    pic: pic01
+  },
+  {
+    header: 'Illustration',
+    description: 'Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.',
+    link: '/generic',
+    pic: pic03
+  }
+];
+
+const Projects = (data) => (
+  <li>
+    <div className="features-container">
+      <img className="image fit" src={data.pic}/>
+      <Link to={data.link} className={`accent${data.index + 1} overlay image`}>
+        <div className="overlay-content">
+          <h2>{data.header}</h2>
+          {/* <p>{data.description}</p> */}
+        </div>
+      </Link>
+    </div>
+  </li>
+)
 
 const Portfolio = () => (
   <section id="portfolio" className="main special">
     <header className="major">
       <h2>Portfolio</h2>
-      <p>
-        Donec imperdiet consequat consequat. Suspendisse feugiat congue.
-        <br />
-        posuere. Nulla massa urna, fermentum eget quam aliquet.
-      </p>
     </header>
     <ul className="features">
-      <li>
-        <h2>Phography</h2>
-        <img className="image" src={pic01}/>
-        <p>Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.</p>
-      </li>
-      <li>
-        <h2>Phography</h2>
-        <img className="image" src={pic01}/>
-        <p>Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.</p>
-      </li>
-      <li>
-        <h2>Phography</h2>
-        <img className="image" src={pic01}/>
-        <p>Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.</p>
-      </li>
+      { data.map( (project, index) => Projects({ ...project, index })) }
     </ul>
 
     {/* {<ul className="statistics">
@@ -57,7 +82,7 @@ const Portfolio = () => (
         <span className="icon fa-diamond"></span>
         <strong>Volunteer</strong>
       </li>
-    </ul>} */}
+    </ul>
     <p className="content">
       Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. 
       Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, 
@@ -66,7 +91,7 @@ const Portfolio = () => (
       et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. 
       Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.
     </p>
-    {/* {<footer className="major">
+    <footer className="major">
       <ul className="actions">
         <li><Link to="/generic" className="button">Learn More</Link></li>
       </ul>
