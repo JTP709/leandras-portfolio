@@ -9,31 +9,31 @@ const data = [
   {
     header: 'Photography',
     description: 'Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.',
-    link: '/generic',
+    link: '/photography',
     pic: pic01
   },
   {
     header: 'Web Design',
     description: 'Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.',
-    link: '/generic',
+    link: '/web',
     pic: pic02
   },
   {
     header: 'Social Media',
     description: 'Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.',
-    link: '/generic',
+    link: '/socialmedia',
     pic: pic03
   },
   {
     header: 'Hand Crafted',
     description: 'Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.',
-    link: '/generic',
+    link: '/handcrafted',
     pic: pic01
   },
   {
     header: 'Illustration',
     description: 'Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.',
-    link: '/generic',
+    link: '/illustration',
     pic: pic03
   }
 ];

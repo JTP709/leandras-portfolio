@@ -14,9 +14,9 @@ const About = () => (
         <p>
           Now that we're formally introduced, let me tell you a little bit about myself. 
           I'm a Visual Communication and Design student at 
-          <Link to={`${nkuURL}`}> Northern Kentucky University </Link>
+          <a href={`${nkuURL}`}> Northern Kentucky University </a>
           and the social media strategist and web admin for 
-          <Link to="https://www.tswgo.org/"> This Star Won't Go Out</Link>, 
+          <a href="https://www.tswgo.org/"> This Star Won't Go Out</a>, 
           a non-profit charity organization.
         </p>
         {/* {<ul className="actions">
