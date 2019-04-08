@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import HeaderGeneric from '../components/HeaderGeneric'
 import pic04 from '../assets/images/pic04.jpg'
+import PortfolioNav from '../components/PortfolioNav';
 
 class HandCrafted extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class HandCrafted extends React.Component {
       <Layout>
         <Helmet title="Generic Page Title" />
         <HeaderGeneric header="Hand Crafted" description="Making art the old fashioned way." />
+        <PortfolioNav />
         <div id="main">
           <section id="content" className="main">
             <span className="image main"><img src={pic04} alt="" /></span>

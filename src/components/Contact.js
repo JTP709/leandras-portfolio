@@ -9,7 +9,7 @@ const Contact = () => (
         Are you as ready as I am to get started? Contact me using the form below!<br />
         Or please feel free to contact me on social media.
       </p>
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" method="POST" data-netlify="true" action="/success">
           <label>Name:
             <input type="text" name="name" />
           </label>
@@ -27,12 +27,12 @@ const Contact = () => (
         <li><Link to="/generic" className="button special">Get Started</Link></li>
         <li><Link to="/generic" className="button">Learn More</Link></li>
       </ul> */}
-      <ul className="icons">
+      {/* <ul className="icons">
         <li><a href="https://twitter.com/DigitalRainArt" className="icon fa-twitter alt"><span className="label">Twitter</span></a></li>
         <li><a href="#" className="icon fa-instagram alt"><span className="label">Instagram</span></a></li>
         <li><a href="#" className="icon fa-github alt"><span className="label">GitHub</span></a></li>
         <li><a href="#" className="icon fa-dribbble alt"><span className="label">Dribbble</span></a></li>
-      </ul>
+      </ul> */}
     </footer>
   </section>
 )

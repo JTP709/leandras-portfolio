@@ -42,7 +42,7 @@
 				padding: 0;
 				vertical-align: middle;
 
-				a {
+				a, portfolioNav {
 					@include vendor('transition', (
 						'font-size #{_duration(transition)} ease'
 					));
@@ -85,7 +85,7 @@
 				li {
 					margin: 0 0.175em;
 
-					a {
+					a, portfolioNav {
 						font-size: 0.9em;
 					}
 				}
