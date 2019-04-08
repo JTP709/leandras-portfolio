@@ -4,7 +4,7 @@ const Footer = (props) => (
     <footer id="footer">
         <section>
             <h2>Nerd Fighters</h2>
-            <p>I'm a proud supporter of This Star Won't Go Out. It's a wonderful organization that helps the families of children who are fighting cancer. Please click the link below to learn more about this awesome organization and how you can help!</p>
+            <p>I'm a proud supporter of This Star Won't Go Out. It's a wonderful non-profit organization that helps the families of children who are fighting cancer. Please click the link below to learn more about this awesome organization and how you can help!</p>
             <ul className="actions">
                 <li><a href="https://www.tswgo.org/" className="button">Learn More</a></li>
             </ul>
