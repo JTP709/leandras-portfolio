@@ -3,10 +3,7 @@ import { Link } from 'gatsby';
 
 const PortfolioNav = () => (
     <nav id="nav">
-        <div className="is-active" offset={-300}>
-            <li>
-                <Link className="portfolioNav" to="/">Home</Link>
-            </li>
+        <ul className="is-active" offset={-300}>
             <li>
                 <Link className="portfolioNav" to="/photography">Photography</Link>
             </li>
@@ -22,7 +19,7 @@ const PortfolioNav = () => (
             <li>
                 <Link className="portfolioNav" to="/illustration">Illustration</Link>
             </li>
-        </div>
+        </ul>
     </nav>
 )
 

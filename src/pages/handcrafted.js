@@ -3,8 +3,9 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 import HeaderGeneric from '../components/HeaderGeneric'
+import PortfolioNav from '../components/PortfolioNav'
+
 import pic04 from '../assets/images/pic04.jpg'
-import PortfolioNav from '../components/PortfolioNav';
 
 class HandCrafted extends React.Component {
   render() {

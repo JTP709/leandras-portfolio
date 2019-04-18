@@ -3,6 +3,8 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 import HeaderGeneric from '../components/HeaderGeneric'
+import PortfolioNav from '../components/PortfolioNav'
+
 import pic04 from '../assets/images/pic04.jpg'
 
 class Illustration extends React.Component {
@@ -12,6 +14,7 @@ class Illustration extends React.Component {
       <Layout>
         <Helmet title="Generic Page Title" />
         <HeaderGeneric header="Illustration" description="My third grade teacher used to tell me I was wasting my time doodling, but look at me now!" />
+        <PortfolioNav />
         <div id="main">
           <section id="content" className="main">
             <span className="image main"><img src={pic04} alt="" /></span>
