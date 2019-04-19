@@ -28,6 +28,10 @@
 			padding-top: 4.25em;
 		}
 
+		& + #gallery {
+			padding-top: 4.25em;
+		}
+
 		ul {
 			margin: 0;
 			padding: 0;
@@ -96,6 +100,10 @@
 			display: none;
 
 			& + #main {
+				padding-top: 0;
+			}
+
+			& + #gallery {
 				padding-top: 0;
 			}
 		}
