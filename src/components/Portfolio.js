@@ -15,7 +15,7 @@ const data = [
   {
     header: 'Web Design',
     description: 'Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus.',
-    link: '/web',
+    link: '/webdesign',
     pic: pic02
   },
   {
