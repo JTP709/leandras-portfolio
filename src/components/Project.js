@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'gatsby';
 import lc from '../assets/images/lc.jpg';
 
-const Project = ({header}) => (
+const Project = ({title, github, url}) => (
   <section className="main project">
     <div className="spotlight">
       <div className="content">
         <header className="major">
-          <h2>{header}</h2>
+          <h2>{title}</h2>
         </header>
         <p>
           Now that we're formally introduced, let me tell you a little bit about myself. 

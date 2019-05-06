@@ -28,9 +28,10 @@ class ProjectShowcase extends React.Component {
   renderProjects() {
     const projects = this.props.pageContext.projects
     let projectList = []
-    for (let i=0; projects; i++) {
-      projectList.push(<Project projects={projects[i]} />)
-      if (i > projects.length -1) {
+    for (let i=0; i < projects.length; i++) {
+      console.log('>>> PROJECTS: ', projects[i])
+      projectList.push(<Project {...projects[i]} />)
+      if (i != projects.length -1) {
         projectList.push(<hr/>)
       }
     }

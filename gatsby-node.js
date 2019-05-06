@@ -78,8 +78,21 @@ const pages = [
   {
     page: 'Social Media',
     description: "Connecting with people in the digital age.",
-    type: 'gallery',
-    images
+    type: 'project',
+    projects: [
+      {
+        title: 'This Star Won\'t Go Out',
+        description: 'Lorem Ipsum',
+        url: 'https://tswgo.com',
+        github: 'https://github.com'
+      },
+      {
+        title: 'Happy Feet',
+        description: 'Lorem Ipsum',
+        url: 'https://google.com',
+        github: 'https://github.com'
+      },
+    ]
   },
   {
     page: 'Web Design',
