@@ -2,7 +2,14 @@ module.exports = {
   siteMetadata: {
     title: "Digital Rainclouds",
     author: "Jon Prell",
-    description: "Leandra Clifton's Portfolio - design based on Stellar by HTML5 UP"
+    description: "Leandra Clifton's Portfolio",
+    toggles: {
+      "photography": true,
+      "web design": true,
+      "social media": true,
+      "hand crafted": true,
+      "illustration": true
+    }
   },
   plugins: [
     'gatsby-plugin-react-helmet',
