@@ -29,7 +29,6 @@ class ProjectShowcase extends React.Component {
     const projects = this.props.pageContext.projects
     let projectList = []
     for (let i=0; i < projects.length; i++) {
-      console.log('>>> PROJECTS: ', projects[i])
       projectList.push(<Project {...projects[i]} />)
       if (i != projects.length -1) {
         projectList.push(<hr/>)
@@ -49,7 +48,7 @@ class ProjectShowcase extends React.Component {
           onLeave={this._handleWaypointLeave}
         >
         </Waypoint>
-        <PortfolioNav sticky={this.state.stickyNav} active={ page} />
+        <PortfolioNav sticky={this.state.stickyNav} active={ page.toLowerCase().replace(/\s/g, '')  } />
         <div id="main">
           <section id="content" className="main">
             { this.renderProjects() }

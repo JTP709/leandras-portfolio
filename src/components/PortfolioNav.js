@@ -1,27 +1,25 @@
 import React from 'react'
-import { Link } from 'gatsby';
+import { Link } from 'gatsby'
 
-const PortfolioNav = (props) => (
-    <nav id="nav" className={props.sticky ? 'alt' : ''}>
+import { toggles, projects } from '../data'
+
+const NavItem = ({ active, header, link }) =>  (
+    <li className={`${active === link ? 'is-active' : ''}`}>
+        <Link className="portfolioNav" to={`/${link}`}>{ header }</Link>
+    </li>
+)
+
+const PortfolioNav = ({ active, sticky }) => (
+    <nav id="nav" className={ sticky ? 'alt' : '' }>
         <ul className="is-active" offset={-300}>
             <li>
                 <Link className="portfolioNav" to="/">Home</Link>
             </li>
-            <li className={`${props.active === 'photography' ? 'is-active' : ''}`}>
-                <Link className="portfolioNav" to="/photography">Photography</Link>
-            </li>
-            <li className={`${props.active === 'webdesign' ? 'is-active' : ''}`}>
-                <Link className="portfolioNav" to="/webdesign">Web Design</Link>
-            </li>
-            <li className={`${props.active === 'socialmedia' ? 'is-active' : ''}`}>
-                <Link className="portfolioNav" to="/socialmedia">Social Media</Link>
-            </li>
-            <li className={`${props.active === 'handcrafted' ? 'is-active' : ''}`}>
-                <Link className="portfolioNav" to="/handcrafted">Hand Crafted</Link>
-            </li>
-            <li className={`${props.active === 'illustration' ? 'is-active' : ''}`}>
-                <Link className="portfolioNav" to="/illustration">Illustration</Link>
-            </li>
+            {
+                projects
+                    .filter(project => toggles[project.link])
+                    .map(project => NavItem({ ...project, active }))
+            }
         </ul>
     </nav>
 )

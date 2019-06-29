@@ -69,7 +69,7 @@ class ImageGallery extends React.Component {
           onLeave={this._handleWaypointLeave}
         >
         </Waypoint>
-        <PortfolioNav sticky={this.state.stickyNav} active= {page.toLowerCase().replace(/\s/g, '') } />
+        <PortfolioNav sticky={this.state.stickyNav} active= { page.toLowerCase().replace(/\s/g, '') } />
         <div id="gallery">
           <section id="content" className="main">
             <Gallery photos={this.state.images} onClick={this.openLightbox} />

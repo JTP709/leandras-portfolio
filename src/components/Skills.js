@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 // Communication, Typography, Technology
 
 const Skills = () => (
-  <section id="skills" className="main special">
+  <section id="Skills" className="main special">
     <header className="major">
       <h2>Professional Talents</h2>
     </header>

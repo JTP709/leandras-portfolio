@@ -5,7 +5,7 @@ import lc from '../assets/images/lc.jpg';
 const nkuURL = "https://www.nku.edu/academics/artsci/programs/undergraduate/visualcommunicationdesign.html";
 
 const About = () => (
-  <section id="about" className="main">
+  <section id="About Me" className="main">
     <div className="spotlight">
       <div className="content">
         <header className="major">

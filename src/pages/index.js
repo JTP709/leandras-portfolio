@@ -9,6 +9,7 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
+import { graphql } from 'gatsby'
 
 class Index extends React.Component {
   constructor(props) {
@@ -19,43 +20,49 @@ class Index extends React.Component {
   }
 
   _handleWaypointEnter= () => {
-    this.setState(() => ({ stickyNav: false }));
+    this.setState(() => ({ stickyNav: false }))
   }
 
   _handleWaypointLeave = () => {
-    this.setState(() => ({ stickyNav: true }));
+    this.setState(() => ({ stickyNav: true }))
   }
 
   render() {
-
+    const { title, description } = this.props.data.site.siteMetadata;
     return (
       <Layout>
-        <Helmet title="Leandra's Portfolio" />
-
-        <Header />
-
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>{ title }</title>
+          <meta name="description" content={ description } />
+          <link rel="canonical" href="http://digitalrainclouds.com" />
+        </Helmet>
+        <Header title={title} />
         <Waypoint
           onEnter={this._handleWaypointEnter}
           onLeave={this._handleWaypointLeave}
-        >
-        </Waypoint>
+        />
         <Nav sticky={this.state.stickyNav} />
-
         <div id="main">
-
           <About />
-
           <Skills />
-
           <Portfolio />
-
           <Contact />
-
         </div>
-
       </Layout>
     )
   }
 }
+
+export const query = graphql`
+  query IndexQuery {
+    site {
+      siteMetadata {
+        title,
+        description
+      }
+    }
+  }
+`
 
 export default Index
