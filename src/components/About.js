@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import lc from '../assets/images/lc.jpg';
 
 const nkuURL = "https://www.nku.edu/academics/artsci/programs/undergraduate/visualcommunicationdesign.html";
@@ -19,9 +18,6 @@ const About = () => (
           <a href="https://www.tswgo.org/"> This Star Won't Go Out</a>, 
           a non-profit charity organization.
         </p>
-        {/* {<ul className="actions">
-          <li><Link to="/generic" className="button">Contact</Link></li>
-        </ul>} */}
       </div>
       <span className="image"><img src={lc} alt="" /></span>
     </div>

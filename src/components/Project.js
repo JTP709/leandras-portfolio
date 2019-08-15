@@ -18,8 +18,8 @@ const Project = ({title, github, url}) => (
           a non-profit charity organization.
         </p>
         <ul className="actions">
-          <li><Link to="/generic" className="button">Website</Link></li>
-          <li><Link to="/generic" className="button">Github</Link></li>
+          <li><Link to={url} className="button">Website</Link></li>
+          <li><Link to={github} className="button">Github</Link></li>
         </ul>
       </div>
       <span className="image"><img className="project" src={lc} alt="" /></span>

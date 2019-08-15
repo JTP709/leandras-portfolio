@@ -6,6 +6,9 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
+    'gatsby-transformer-remark',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -18,7 +21,12 @@ module.exports = {
         icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    }
   ],
 }

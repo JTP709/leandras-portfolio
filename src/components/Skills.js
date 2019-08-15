@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 // Communication, Typography, Technology
 
@@ -37,11 +36,6 @@ const Skills = () => (
         </p>
       </li>
     </ul>
-    {/* {<footer className="major">
-      <ul className="actions">
-        <li><Link to="/generic" className="button">Learn More</Link></li>
-      </ul>
-    </footer>} */}
   </section>
 )
 
